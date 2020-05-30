@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"laji\startup_stm32f103xb.o"
+"laji\main.o"
+"laji\stm32f1xx_it.o"
+"laji\stm32f1xx_hal_msp.o"
+"laji\stm32f1xx_hal_gpio_ex.o"
+"laji\stm32f1xx_hal_tim.o"
+"laji\stm32f1xx_hal_tim_ex.o"
+"laji\stm32f1xx_hal.o"
+"laji\stm32f1xx_hal_rcc.o"
+"laji\stm32f1xx_hal_rcc_ex.o"
+"laji\stm32f1xx_hal_gpio.o"
+"laji\stm32f1xx_hal_dma.o"
+"laji\stm32f1xx_hal_cortex.o"
+"laji\stm32f1xx_hal_pwr.o"
+"laji\stm32f1xx_hal_flash.o"
+"laji\stm32f1xx_hal_flash_ex.o"
+"laji\stm32f1xx_hal_exti.o"
+"laji\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "laji\laji.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "laji.map" -o laji\laji.axf
